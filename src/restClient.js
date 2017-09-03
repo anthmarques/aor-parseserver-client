@@ -76,7 +76,7 @@ export default (parseConfig, httpClient = fetchJson) => {
 	        const query = {
 	            where: JSON.stringify({ "objectId": {"$in":params.ids} }),
 	        };
-	        url = `${parseConfig.URL}/classes/${resource}?${queryParameters(query)}`;
+	        url = `${parseConfig.URL}/classes/_User?${queryParameters(query)}`;
 	        break;
 	    }
 	    case GET_MANY_REFERENCE: {
